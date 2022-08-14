@@ -5,34 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style-inline-block.css"> -->
-    <!-- <link rel="stylesheet" href="style-position.css"> -->
-    <!-- <link rel="stylesheet" href="style-float.css"> -->
-    <!-- <link rel="stylesheet" href="style-flex.css"> -->
-    <link rel="stylesheet" href="style-grid.css">
-    <title>Lesson 3. Position</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-input.css">
+    <link rel="stylesheet" href="style-searchbar.css">
+    <link rel="stylesheet" href="style-checkbox.css">
+    <link rel="stylesheet" href="style-radio.css">
+    <title>UI-Kit</title>
 </head>
 
 <body>
-    <header class="gallery">
-        <div class="gallery__info">
-            Этот блок занимает 30%, тут расположен текст – описание картинки
+    <div class="section">
+        <div class="custom-input">
+            <label for="input" class="custom-input__label">Дата и время заказа</label>
+            <input id="input" class="custom-input__input custom-input__input-primary" type="text" placeholder="Введите">
         </div>
-        <div class="gallery__main-slide">
-            красивый слайд в центе
+
+        <div class="custom-input">
+            <label for="input-incorrect" class="custom-input__label">Дата и время заказа</label>
+            <div class="custom-input_with-icon">
+                <input id="input-incorrect" class="custom-input__input custom-input__input-incorrect" type="text"
+                    placeholder="Введите" value="06.12.2021">
+                <button class="custom-input__button">
+                    <svg class="custom-input__icon custom-input__icon_x" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="gallery__slides">
-            <ul class="slides">
-                <li class="slides__slide"></li>
-                <li class="slides__slide"></li>
-                <li class="slides__slide"></li>
-                <li class="slides__slide"></li>
-                <li class="slides__slide"></li>
-                <li class="slides__slide"></li>
-                <li class="slides__slide"></li>
-            </ul>
+
+        <div class="custom-input">
+            <label for="input-disabled" class="custom-input__label">Дата и время заказа</label>
+            <div class="custom-input_with-icon">
+                <input id="input-disabled" class="custom-input__input custom-input__input-disabled" type="text"
+                    placeholder="Введите" value="06.12.2021">
+                <button class="custom-input__button">
+                    <svg class="custom-input__icon custom-input__icon_disabled" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z"
+                            stroke="none" />
+                        <path
+                            d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z"
+                            stroke="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <div class="section">
+        <div class="custom-searchbars">
+            <input class="custom-searchbars__input" type="text" placeholder="Номер заказа или ФИО">
+            <button class="custom-searchbars__button">
+                <svg class="custom-searchbars__icon custom-searchbars__icon_search" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
+                        fill="none" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="custom-searchbars">
+            <input class="custom-searchbars__input custom-searchbars__input_filled" type="text"
+                placeholder="Номер заказа или ФИО" value="50744">
+            <button class="custom-searchbars__button">
+                <svg class="custom-searchbars__icon custom-searchbars__icon_search" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
+                        fill="none" />
+                </svg>
+            </button>
+            <button class="custom-searchbars__button custom-searchbars__button_filled">
+                <svg class="custom-searchbars__icon custom-searchbars__icon_x" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="section section-checkbox">
+        <div class="custom-checkbox">
+            <label>
+                <input class="custom-checkbox__input" type="checkbox">
+                <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                </svg>
+            </label>
+        </div>
+
+        <div class="custom-checkbox">
+            <label>
+                <input class="custom-checkbox__input" type="checkbox" checked>
+                <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
+                </svg>
+            </label>
+        </div>
+    </div>
+
+    <div class="section section-radio">
+        <input class="custom-radio__input" name="custom-radio" type="radio">
+        <input class="custom-radio__input" name="custom-radio" type="radio" checked>
+    </div>
+
 </body>
 
 </html>
