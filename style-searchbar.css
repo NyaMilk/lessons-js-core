@@ -3,8 +3,6 @@
     flex-direction: column;
     gap: 0.5rem;
     position: relative;
-
-    margin-bottom: 3rem;
 }
 
 .custom-searchbar__input {

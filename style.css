@@ -39,6 +39,11 @@ body {
     margin-bottom: 7rem;
 }
 
+.section-input,
+.section-searchbar {
+    gap: 3rem;
+}
+
 .section-checkbox,
 .section-radio {
     width: 10rem;
