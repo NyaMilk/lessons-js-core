@@ -4,14 +4,19 @@
     --background-color-red: #F53152;
     --background-color-white: #FFFFFF;
     --background-color-black: #000000;
-
     --background-color-purple: #8055FF;
     --background-color-light-gray: #E5E5E5;
+
+    --color-blue: #459DF5;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-size: 0.8125rem;
+    line-height: 1rem;
 }
 
 body {
@@ -30,10 +35,32 @@ body {
     border-radius: 0.5rem;
 }
 
+.section:nth-child(7) {
+    margin-bottom: 7rem;
+}
+
 .section-checkbox,
 .section-radio {
     width: 10rem;
     flex-direction: row;
     gap: 1rem;
     justify-content: center
+}
+
+.section-button,
+.section-dropdown {
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+.article-button {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 23%;
+}
+
+.section-header {
+    width: 45rem;
+    gap: 3rem;
 }
