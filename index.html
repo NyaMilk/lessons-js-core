@@ -26,8 +26,8 @@
             <input id="input" class="custom-input__input custom-input__input-primary" type="text" placeholder="Введите">
         </div>
         <div class="custom-input">
-            <label for="input-incorrect" class="custom-input__label">Дата и время заказа</label>
-            <div class="custom-input_with-icon">
+            <div class="custom-input__group_with-icon">
+                <label for="input-incorrect" class="custom-input__label">Дата и время заказа</label>
                 <input id="input-incorrect" class="custom-input__input custom-input__input-incorrect" type="text"
                     placeholder="Введите" value="06.12.2021">
                 <button class="custom-input__button">
@@ -39,12 +39,12 @@
             </div>
         </div>
         <div class="custom-input">
-            <label for="input-disabled" class="custom-input__label">Дата и время заказа</label>
-            <div class="custom-input_with-icon">
+            <div class="custom-input__group_with-icon">
+                <label for="input-disabled" class="custom-input__label">Дата и время заказа</label>
                 <input id="input-disabled" class="custom-input__input custom-input__input-disabled" type="text"
-                    placeholder="Введите" value="06.12.2021" disabled>
+                    placeholder="Введите" value="06.12.2021">
                 <button class="custom-input__button">
-                    <svg class="custom-input__icon custom-input__icon_disabled" viewBox="0 0 16 16"
+                    <svg class="custom-input__icon custom-input__icon_locked" viewBox="0 0 16 16"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z"
@@ -94,7 +94,8 @@
         <div class="custom-checkbox">
             <label class="custom-checkbox__label">
                 <input class="custom-checkbox__input" type="checkbox">
-                <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                 </svg>
             </label>
@@ -102,7 +103,8 @@
         <div class="custom-checkbox">
             <label class="custom-checkbox__label">
                 <input class="custom-checkbox__input" type="checkbox" checked>
-                <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                 </svg>
             </label>
@@ -114,127 +116,157 @@
         <input class="custom-radio__input" name="custom-radio" type="radio" checked>
     </div>
 
-
     <div class="section section-button">
         <div class="article-button">
-            <button class="custom-button__button custom-button__button_with-icon">
-                Text here
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
-            <button class="custom-button__button custom-button__button_without-icon">Text here</button>
-            <button class="custom-button__button custom-button__button_without-text">
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button class="custom-button__button custom-button__button_with-icon">
+                    Text here
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button class="custom-button__button custom-button__button_without-icon">Text here</button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button class="custom-button__button custom-button__button_without-text">
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <div class="article-button">
-            <button class="custom-button__button custom-button__button_with-icon custom-button__button_transparent">
-                Text here
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
-            <button
-                class="custom-button__button custom-button__button_without-icon custom-button__button_transparent">Text
-                here</button>
-            <button class="custom-button__button custom-button__button_without-text custom-button__button_transparent">
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button class="custom-button__button custom-button__button_with-icon custom-button__button_transparent">
+                    Text here
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button
+                    class="custom-button__button custom-button__button_without-icon custom-button__button_transparent">Text
+                    here</button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button
+                    class="custom-button__button custom-button__button_without-text custom-button__button_transparent">
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <div class="article-button">
-            <button class="custom-button__button custom-button__button_with-icon custom-button__button_disabled">
-                Text here
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
-            <button class="custom-button__button custom-button__button_without-icon custom-button__button_disabled">Text
-                here</button>
-            <button class="custom-button__button custom-button__button_without-text custom-button__button_disabled">
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button class="custom-button__button custom-button__button_with-icon custom-button__button_disabled">
+                    Text here
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button
+                    class="custom-button__button custom-button__button_without-icon custom-button__button_disabled">Text
+                    here</button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_middle">
+                <button class="custom-button__button custom-button__button_without-text custom-button__button_disabled">
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <div class="article-button">
-            <button class="custom-button__button custom-button__button_with-icon_small">
-                Text here
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
-            <button class="custom-button__button custom-button__button_without-icon_small">Text here</button>
-            <button class="custom-button__button custom-button__button_without-text_small">
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
+            <div class="custom-button__group custom-button__group_size_small">
+                <button class="custom-button__button custom-button__button_with-icon">
+                    Text here
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_small">
+                <button class="custom-button__button custom-button__button_without-icon">Text here</button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_small">
+                <button class="custom-button__button custom-button__button_without-text">
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <div class="article-button">
-            <button class="custom-button__button custom-button__button_with-icon_small custom-button__button_disabled">
-                Text here
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
-            <button
-                class="custom-button__button custom-button__button_without-icon_small custom-button__button_disabled">Text
-                here</button>
-            <button
-                class="custom-button__button custom-button__button_without-text_small custom-button__button_disabled">
-                <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 14.5H15" fill="none" />
-                    <path
-                        d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
-                        fill="none" />
-                </svg>
-            </button>
+            <div class="custom-button__group custom-button__group_size_small">
+                <button class="custom-button__button custom-button__button_with-icon custom-button__button_disabled">
+                    Text here
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_small">
+                <button
+                    class="custom-button__button custom-button__button_without-icon custom-button__button_disabled">Text
+                    here</button>
+            </div>
+            <div class="custom-button__group custom-button__group_size_small">
+                <button class="custom-button__button custom-button__button_without-text custom-button__button_disabled">
+                    <svg class="custom-button__icon custom-button__icon_pencil" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14.5H15" fill="none" />
+                        <path
+                            d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
+                            fill="none" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -243,7 +275,7 @@
             <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                     <input class="custom-checkbox__input" type="checkbox">
-                    <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                     </svg>
                     <span class="custom-checkbox__text">Новый</span>
@@ -252,7 +284,7 @@
             <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                     <input class="custom-checkbox__input" type="checkbox">
-                    <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                     </svg>
                     <span class="custom-checkbox__text">Рассчет</span>
@@ -261,7 +293,7 @@
             <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                     <input class="custom-checkbox__input" type="checkbox" checked>
-                    <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                     </svg>
                     <span class="custom-checkbox__text">Подтвержден</span>
@@ -270,7 +302,7 @@
             <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                     <input class="custom-checkbox__input" type="checkbox">
-                    <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                     </svg>
                     <span class="custom-checkbox__text">Отложен</span>
@@ -279,7 +311,7 @@
             <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                     <input class="custom-checkbox__input" type="checkbox">
-                    <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                     </svg>
                     <span class="custom-checkbox__text">Выполнен</span>
@@ -288,7 +320,8 @@
             <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                     <input class="custom-checkbox__input" type="checkbox">
-                    <svg class="custom-checkbox__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark
+                    " viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                     </svg>
                     <span class="custom-checkbox__text">Отменен</span>
@@ -410,31 +443,31 @@
                     <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
                 </svg>
                 Светлая тема</button>
-                <div class="custom-dropdown custom-dropdown_switcher">
-                    Выберите тему
-                    <button class="custom-dropdown__button custom-dropdown__button_with-icon">
-                        <svg class="custom-dropdown__icon custom-dropdown__icon_sun" viewBox="0 0 16 16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8" cy="8" r="4" stroke="none" />
-                            <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
-                            <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
-                            <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
-                            <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
-                            <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none" />
-                            <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
-                            <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
-                            <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
-                        </svg>
-                        Светлая</button>
-                    <button class="custom-dropdown__button custom-dropdown__button_with-icon">
-                        <svg class="custom-dropdown__icon custom-dropdown__icon_moon" viewBox="0 0 16 16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
-                                stroke="none" />
-                        </svg>
-                        Темная</button>
-                </div>
+            <div class="custom-dropdown custom-dropdown_switcher">
+                Выберите тему
+                <button class="custom-dropdown__button custom-dropdown__button_with-icon">
+                    <svg class="custom-dropdown__icon custom-dropdown__icon_sun" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="4" stroke="none" />
+                        <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
+                        <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none" />
+                        <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none" />
+                        <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none" />
+                        <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none" />
+                        <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none" />
+                        <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
+                        <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
+                    </svg>
+                    Светлая</button>
+                <button class="custom-dropdown__button custom-dropdown__button_with-icon">
+                    <svg class="custom-dropdown__icon custom-dropdown__icon_moon" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                            stroke="none" />
+                    </svg>
+                    Темная</button>
+            </div>
         </header>
     </div>
 

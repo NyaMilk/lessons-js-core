@@ -7,34 +7,34 @@
     background-color: var(--background-color-blue);
 }
 
-.custom-button__button_with-icon {
+.custom-button__group_size_middle .custom-button__button_with-icon {
     width: 7rem;
     height: 2rem;
     padding-left: 2rem;
 }
 
-.custom-button__button_with-icon_small {
+.custom-button__group_size_small .custom-button__button_with-icon {
     width: 5.75rem;
     height: 1.5rem;
     padding-left: 1.5rem;
 }
 
-.custom-button__button_without-icon {
+.custom-button__group_size_middle .custom-button__button_without-icon {
     width: 5rem;
     height: 2rem;
 }
 
-.custom-button__button_without-icon_small {
+.custom-button__group_size_small .custom-button__button_without-icon {
     width: 4.5rem;
     height: 1.5rem;
 }
 
-.custom-button__button_without-text {
+.custom-button__group_size_middle .custom-button__button_without-text {
     width: 2rem;
     height: 2rem;
 }
 
-.custom-button__button_without-text_small {
+.custom-button__group_size_small .custom-button__button_without-text {
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -46,20 +46,20 @@
     height: 1rem;
 }
 
-.custom-button__button_with-icon .custom-button__icon {
+.custom-button__group_size_middle .custom-button__button_with-icon .custom-button__icon {
     left: 1rem;
 }
 
-.custom-button__button_with-icon_small .custom-button__icon {
+.custom-button__group_size_small .custom-button__button_with-icon .custom-button__icon {
     top: 0.25rem;
     left: 0.5rem;
 }
 
-.custom-button__button_without-text .custom-button__icon {
+.custom-button__group_size_middle .custom-button__button_without-text .custom-button__icon {
     left: 0.5rem;
 }
 
-.custom-button__button_without-text_small .custom-button__icon {
+.custom-button__group_size_small .custom-button__button_without-text .custom-button__icon {
     top: 0.25rem;
     left: 0.25rem;
 }

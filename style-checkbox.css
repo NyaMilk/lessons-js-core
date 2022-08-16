@@ -27,12 +27,12 @@
     border-color: var(--background-color-blue);
 }
 
-.custom-checkbox__input:checked + .custom-checkbox__icon {
+.custom-checkbox__input:checked+.custom-checkbox__icon {
     opacity: 1;
 }
 
-.custom-checkbox__input:checked ~ .custom-checkbox__text,
-.custom-checkbox__input_without-icon:checked ~ .custom-checkbox__text{
+.custom-checkbox__input:checked~.custom-checkbox__text,
+.custom-checkbox__input_without-icon:checked~.custom-checkbox__text {
     color: var(--color-blue);
 }
 
@@ -40,6 +40,9 @@
     position: absolute;
     left: 0;
     width: 1rem;
-    fill: var(--background-color-white);
     opacity: 0;
+}
+
+.custom-checkbox__icon_checkmark {
+    fill: var(--background-color-white);
 }

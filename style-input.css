@@ -4,6 +4,11 @@
     gap: 0.5rem;
 }
 
+.custom-input__label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 .custom-input__input {
     width: 16rem;
     height: 2rem;
@@ -33,7 +38,7 @@
     padding-right: 2rem;
 }
 
-.custom-input_with-icon {
+.custom-input__group_with-icon {
     position: relative;
     width: 16rem;
 }
@@ -56,6 +61,6 @@
     stroke: var(--background-color-light-blue)
 }
 
-.custom-input__icon_disable {
+.custom-input__icon_locked {
     fill: var(--background-color-black)
 }
