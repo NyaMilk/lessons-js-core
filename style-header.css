@@ -1,4 +1,4 @@
-.section-header .header {
+.header {
     position: relative;
     width: 43.125rem;
     height: 2rem;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.section-header h1 {
+.header__title {
     font-size: 1.625rem;
 }
 
@@ -17,7 +17,7 @@
     padding: 0.5rem 1rem;
 }
 
-.section-header .custom-dropdown_switcher {
+.header .custom-dropdown_switcher {
     position: absolute;
     top: 2.25rem;
     right: 0;
