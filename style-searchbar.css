@@ -3,11 +3,13 @@
     flex-direction: column;
     gap: 0.5rem;
     position: relative;
+    width: 16rem;
+    height: 2rem;
 }
 
 .custom-searchbar__input {
-    width: 16rem;
-    height: 2rem;
+    width: 100%;
+    height: 100%;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     border-radius: 0.25rem;
     box-sizing: border-box;
@@ -37,6 +39,7 @@
 }
 
 .custom-searchbar__button_filled {
+    top: 0;
     right: 0;
 }
 

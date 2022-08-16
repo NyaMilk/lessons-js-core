@@ -82,6 +82,10 @@
     color: var(--color-black);
 }
 
-.custom-button__button_disabled svg {
+.custom-button__icon_disabled {
     stroke: var(--background-color-black);
+}
+
+.custom-button__icon_filter {
+    fill: var(--background-color-white);
 }

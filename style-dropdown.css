@@ -73,7 +73,15 @@
     fill: var(--background-color-blue);
 }
 
+.custom-dropdown__icon_refresh {
+    stroke: var(--background-color-blue);
+}
+
 .custom-dropdown__button:hover .custom-dropdown__icon_sun,
 .custom-dropdown__button:hover .custom-dropdown__icon_moon {
     fill: var(--background-color-white);
+}
+
+.custom-dropdown__button:hover .custom-dropdown__icon_refresh {
+    stroke: var(--background-color-white);
 }

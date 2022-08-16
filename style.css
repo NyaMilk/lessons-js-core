@@ -70,3 +70,7 @@ body {
     width: 45rem;
     gap: 3rem;
 }
+
+.section-header .header {
+    width: 43.125rem;
+}

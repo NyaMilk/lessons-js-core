@@ -1,0 +1,263 @@
+:root {
+    --background-color-blue: #459DF5;
+    --background-color-light-blue: #BAD8F5;
+    --background-color-red: #F53152;
+    --background-color-white: #FFFFFF;
+    --background-color-black: #000000;
+    --background-color-purple: #8055FF;
+    --background-color-light-gray: #E5E5E5;
+    --background-color-white-blue: #EBF0F5;
+    --background-color-orange: #FF8C56;
+    --background-color-green: #0FB864;
+    
+    --color-blue: #459DF5;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-green: #0FB864;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrap {
+    max-width: 94rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+/* header */
+.header {
+    margin-bottom: 3rem;
+}
+
+/* filters searchbar */
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.searchbar__groups {
+    display: flex;
+    gap: 1rem;
+}
+
+.searchbar__group {
+    width: 20rem;
+}
+
+.searchbar__button_with-icon {
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+}
+
+.searchbar .searchbar__button_transparent {
+    width: 8.875rem;
+}
+
+.searchbar__button_small {
+    width: 6.875rem;
+}
+
+/* filters filter */
+.filters {
+    margin-bottom: 2rem;
+}
+
+.filter {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-color-white-blue);
+}
+
+.filter__title {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.filter_date {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__groups {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.filter__group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 8.875rem;
+    height: 2rem;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+    background-color: var(--background-color-white);
+    border: 0.0625rem solid var(--background-color-blue);
+    box-sizing: border-box;
+}
+
+.filter__input {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+.filter__input::placeholder {
+    color: var(--background-color-light-blue);
+}
+
+.filter__prefix {
+    padding-left: 0.5rem;
+}
+
+.filter__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: none;
+}
+
+.filter__group_status {
+    width: 12rem;
+}
+
+.filter__input_status {
+    padding-left: 0.5rem;
+}
+
+.filter__icon_v {
+    width: 50%;
+    height: 100%;
+    fill: var(--background-color-light-blue);
+}
+
+/* table */
+.table__head {
+    display: flex;
+    background-color: var(--background-color-blue);
+    color: var(--color-white);
+}
+
+.table__body {
+    display: flex;
+}
+
+.table__ceil {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.75rem 0 0.75rem 0.5rem;
+}
+
+.table__body .table__ceil {
+    border-bottom: 1px solid var(--background-color-white-blue);
+}
+
+.table__ceil_color_green {
+    color: var(--color-green);
+}
+
+.table__ceil:nth-child(1) {
+    width: 2.5rem;
+}
+
+.table__ceil:nth-child(2) {
+    width: 6.75rem;
+}
+
+.table__ceil:nth-child(3) {
+    width: 11rem;
+}
+
+.table__ceil:nth-child(4) {
+    width: 11rem;
+}
+
+.table__ceil:nth-child(5) {
+    width: 6rem;
+}
+
+.table__ceil:nth-child(6) {
+    width: 8rem;
+}
+
+.table__ceil:nth-child(7) {
+    width: 48.25rem;
+}
+
+.table__icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.table__icon_v {
+    fill: var(--background-color-white);
+}
+
+.table__icon_dot {
+    fill: var(--background-color-blue);
+}
+
+.table__icon_dot-orange {
+    fill: var(--background-color-orange);
+}
+
+.table__icon_checkmark {
+    fill: var(--background-color-green);
+}
+
+.table__icon_abort {
+    stroke: var(--background-color-black);
+}
+
+.table__icon_abort-circle {
+    stroke: var(--background-color-purple);
+}
+
+.table__footer {
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    background-color: var(--background-color-white-blue);
+}
+
+.footer__group {
+    display: flex;
+    align-items: center;
+    width: 23.625rem;
+    justify-content: space-between;
+}
+
+.footer__text {
+    color: var(--color-blue);
+}
+
+.footer__group .footer__button_long {
+    width: 8.625rem;
+}
+
+.footer__button_bin-red {
+    background-color: var(--background-color-red);
+}
+
+.footer__icon_bin {
+    stroke: var(--background-color-white);
+}
