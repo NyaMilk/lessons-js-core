@@ -163,7 +163,7 @@ body {
     color: var(--color-white);
 }
 
-.table__body {
+.table__row {
     display: flex;
 }
 
@@ -173,7 +173,7 @@ body {
     padding: 0.75rem 0 0.75rem 0.5rem;
 }
 
-.table__body .table__ceil {
+.table__row .table__ceil {
     border-bottom: 1px solid var(--background-color-white-blue);
 }
 
@@ -249,7 +249,6 @@ body {
     justify-content: space-between;
     height: 2.5rem;
     position: relative;
-    margin-top: 2.5rem;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
     background-color: var(--background-color-white-blue);
@@ -311,16 +310,17 @@ body {
     display: flex;
 }
 
-.pagination__item {
-    width: 1.5rem;
+.pagination__item,
+.pagination__icon {
     height: 1.5rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     border: none;
     background-color: transparent;
     color: var(--color-blue);
 }
 
-.pagination__item:last-child {
+.pagination__icon {
     margin-left: 1rem;
 }
 
@@ -332,4 +332,20 @@ body {
 .pagination__text {
     padding: 0.25rem 0;
     color: var(--color-blue);
+}
+
+.table__body {
+    height: 25rem;
+    padding-bottom: 3rem;
+    overflow: auto;
+}
+
+.table__body::-webkit-scrollbar {
+    width: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.34);
+    border-radius: 0.5rem;
 }
