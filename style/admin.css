@@ -173,6 +173,10 @@ body {
     padding: 0.75rem 0 0.75rem 0.5rem;
 }
 
+.table__ceil_with-opacity {
+    opacity: 0.5;
+}
+
 .table__row .table__ceil {
     border-bottom: 1px solid var(--background-color-white-blue);
 }
