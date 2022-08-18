@@ -6,10 +6,6 @@
     align-items: center;
 }
 
-.header__title {
-    font-size: 1.625rem;
-}
-
 .header__button {
     width: 8.75rem;
     height: 2rem;
