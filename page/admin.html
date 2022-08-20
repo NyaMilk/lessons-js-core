@@ -23,8 +23,8 @@
     <div class="wrap">
         <header class="header">
             <h1 class="header__title">Список заказов</h1>
-            <button class="custom-dropdown__button custom-dropdown__button_with-icon header__button">
-                <svg class="custom-dropdown__icon custom-dropdown__icon_sun" viewBox="0 0 16 16"
+            <button class="custom-button__button custom-button__button_size_middle custom-button__button_transparent">
+                <svg class="custom-button__icon custom-button__icon_fill_blue" viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="8" cy="8" r="4" stroke="none" />
                     <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none" />
@@ -36,7 +36,8 @@
                     <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none" />
                     <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none" />
                 </svg>
-                Светлая тема</button>
+                <span class="custom-button__text">Светлая тема</span>
+            </button>
         </header>
 
         <section class="filters">
@@ -44,35 +45,29 @@
                 <div class="searchbar__groups">
                     <div class="custom-searchbar searchbar__group">
                         <input class="custom-searchbar__input" type="text" placeholder="Номер заказа или ФИО">
-                        <button class="custom-searchbar__button">
-                            <svg class="custom-searchbar__icon custom-searchbar__icon_search" viewBox="0 0 16 16"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
-                                    fill="none" />
-                            </svg>
-                        </button>
+                        <svg class="custom-searchbar__icon custom-searchbar__icon_stroke_light_blue" viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
+                                fill="none" />
+                        </svg>
                     </div>
-                    <div class="custom-button__group custom-button__group_size_middle">
-                        <button
-                            class="custom-button__button custom-button__button_with-icon searchbar__button_with-icon">
-                            Фильтры
-                            <svg class="custom-button__icon custom-button__icon_filter" viewBox="0 0 16 16"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4H4V5.5L7 8.5V12L9 13V8.5L12 5.5V4Z" stroke="none" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="custom-button__group custom-button__group_size_middle">
-                        <button
-                            class="custom-button__button custom-button__button_without-icon custom-button__button_transparent searchbar__button_transparent">
-                            Сбросить фильтры
-                        </button>
-                    </div>
+                    <button
+                        class="custom-button__button custom-button__button_size_middle custom-button__button_primary">
+                        <svg class="custom-button__icon custom-button__icon_fill_white" viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4H4V5.5L7 8.5V12L9 13V8.5L12 5.5V4Z" stroke="none" />
+                        </svg>
+                        <span class="custom-button__text">Фильтры</span>
+                    </button>
+                    <button
+                        class="custom-button__button custom-button__button_size_middle custom-button__button_transparent">
+                        <span class="custom-button__text">Сбросить фильтры</span>
+                    </button>
                 </div>
                 <button
-                    class="custom-dropdown__button custom-dropdown__button_with-icon header__button searchbar__button_small">
-                    <svg class="custom-dropdown__icon custom-dropdown__icon_refresh" viewBox="0 0 16 16"
+                    class="custom-button__button custom-button__button_size_middle custom-button__button_transparent">
+                    <svg class="custom-button__icon custom-button__icon_stroke_blue" viewBox="0 0 16 16"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11"
                             fill="none" />
@@ -80,8 +75,10 @@
                         <path d="M4.5 9.5L2.50254 7.5L0.752533 9.75" fill="none" />
                         <path d="M11.5 6.5L13.5 8.5L15.25 6.25" fill="none" />
                     </svg>
-                    Загрузка</button>
+                    <span class="custom-button__text">Загрузка</span>
+                </button>
             </div>
+
             <div class="filter">
                 <div class="filter_date">
                     <span class="filter__title">Дата оформления</span>
@@ -107,8 +104,9 @@
                     <div class="custom-searchbar filter__group_status">
                         <input class="custom-searchbar__input custom-searchbar__input_filled filter__input_status"
                             type="text" value="Любой">
-                        <button class="custom-searchbar__button custom-searchbar__button_filled">
-                            <svg class="custom-searchbar__icon filter__icon_v" viewBox="0 0 16 16"
+                        <button
+                            class="custom-searchbar__button custom-button__button custom-button__button_without-text_small custom-button__button_transparent">
+                            <svg class="custom-button__icon custom-button__icon_fill_light_blue" viewBox="0 0 16 16"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
                             </svg>
@@ -134,15 +132,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="custom-button__group custom-button__group_size_middle">
-                    <button
-                        class="custom-button__button custom-button__button_without-icon custom-button__button_transparent searchbar__button_transparent">
-                        Применить
-                    </button>
-                </div>
-
+                <button
+                    class="custom-button__button custom-button__button_size_middle custom-button__button_transparent">
+                    <span class="custom-button__text">Применить</span>
+                </button>
                 <div class="custom-dropdown filter__modal">
-                    <div class="custom-checkbox">
+                    <div class="custom-checkbox custom-dropdown__item">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox">
                             <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
@@ -152,7 +147,7 @@
                             <span class="custom-checkbox__text">Новый</span>
                         </label>
                     </div>
-                    <div class="custom-checkbox">
+                    <div class="custom-checkbox custom-dropdown__item">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox">
                             <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
@@ -162,7 +157,7 @@
                             <span class="custom-checkbox__text">Рассчет</span>
                         </label>
                     </div>
-                    <div class="custom-checkbox">
+                    <div class="custom-checkbox custom-dropdown__item">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox" checked>
                             <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
@@ -172,7 +167,7 @@
                             <span class="custom-checkbox__text">Подтвержден</span>
                         </label>
                     </div>
-                    <div class="custom-checkbox">
+                    <div class="custom-checkbox custom-dropdown__item">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox">
                             <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
@@ -182,7 +177,7 @@
                             <span class="custom-checkbox__text">Отложен</span>
                         </label>
                     </div>
-                    <div class="custom-checkbox">
+                    <div class="custom-checkbox custom-dropdown__item">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox">
                             <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
@@ -192,11 +187,11 @@
                             <span class="custom-checkbox__text">Выполнен</span>
                         </label>
                     </div>
-                    <div class="custom-checkbox">
+                    <div class="custom-checkbox custom-dropdown__item">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox">
-                            <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark
-                            " viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="custom-checkbox__icon custom-checkbox__icon_checkmark" viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                             </svg>
                             <span class="custom-checkbox__text">Отменен</span>
@@ -208,7 +203,7 @@
 
         <section class="table">
             <div class="table__head">
-                <div class="table__ceil">
+                <div class="table__ceil table__ceil_with-checkbox">
                     <div class="custom-checkbox">
                         <label class="custom-checkbox__label">
                             <input class="custom-checkbox__input" type="checkbox">
@@ -219,37 +214,37 @@
                         </label>
                     </div>
                 </div>
-                <div class="table__ceil">#</div>
-                <div class="table__ceil table__ceil_select">
+                <div class="table__ceil table__ceil_number">#</div>
+                <div class="table__ceil table__ceil_date table__ceil_select">
                     Дата
-                    <svg class="table__icon table__icon_v" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="table__icon table__icon_fill_white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
                     </svg>
                 </div>
-                <div class="table__ceil">
+                <div class="table__ceil table__ceil_status">
                     Статус
-                    <svg class="table__icon table__icon_v" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="table__icon table__icon_fill_white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
                     </svg>
                 </div>
-                <div class="table__ceil">
+                <div class="table__ceil table__ceil_count">
                     Позиций
-                    <svg class="table__icon table__icon_v" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="table__icon table__icon_fill_white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
                     </svg>
                 </div>
-                <div class="table__ceil">
+                <div class="table__ceil table__ceil_amount">
                     Cумма
-                    <svg class="table__icon table__icon_v" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="table__icon table__icon_fill_white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none" />
                     </svg>
                 </div>
-                <div class="table__ceil">ФИО покупателя</div>
+                <div class="table__ceil table__ceil_name">ФИО покупателя</div>
             </div>
 
             <div class="table__body">
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -260,21 +255,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">1270989</div>
-                    <div class="table__ceil">15.02.2021, 18:00</div>
-                    <div class="table__ceil">
-                        <svg class="table__icon table__icon_dot-orange" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">1270989</div>
+                    <div class="table__ceil table__ceil_date">15.02.2021, 18:00</div>
+                    <div class="table__ceil table__ceil_status">
+                        <svg class="table__icon table__icon_fill_orange" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none" />
                         </svg>
                         Новый
                     </div>
-                    <div class="table__ceil">6</div>
-                    <div class="table__ceil">101 907 ₽</div>
-                    <div class="table__ceil">Чернышев Филипп Семёнович</div>
+                    <div class="table__ceil table__ceil_count">6</div>
+                    <div class="table__ceil table__ceil_amount">101 907 ₽</div>
+                    <div class="table__ceil table__ceil_name">Чернышев Филипп Семёнович</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -285,21 +280,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">2353474</div>
-                    <div class="table__ceil">12.03.2021, 05:15</div>
-                    <div class="table__ceil">
-                        <svg class="table__icon table__icon_dot-orange" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">2353474</div>
+                    <div class="table__ceil table__ceil_date">12.03.2021, 05:15</div>
+                    <div class="table__ceil table__ceil_status">
+                        <svg class="table__icon table__icon_fill_orange" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none" />
                         </svg>
                         Новый
                     </div>
-                    <div class="table__ceil">2</div>
-                    <div class="table__ceil">98 003 ₽</div>
-                    <div class="table__ceil">Филиппов Степан Васильевич</div>
+                    <div class="table__ceil table__ceil_count">2</div>
+                    <div class="table__ceil table__ceil_amount">98 003 ₽</div>
+                    <div class="table__ceil table__ceil_name">Филиппов Степан Васильевич</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -310,20 +305,20 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">1103397</div>
-                    <div class="table__ceil">03.02.2021, 08:04</div>
-                    <div class="table__ceil">
-                        <svg class="table__icon table__icon_dot" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <div class="table__ceil table__ceil_number">1103397</div>
+                    <div class="table__ceil table__ceil_date">03.02.2021, 08:04</div>
+                    <div class="table__ceil table__ceil_status">
+                        <svg class="table__icon table__icon_fill_blue" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none" />
                         </svg>
                         Рассчет
                     </div>
-                    <div class="table__ceil">5</div>
-                    <div class="table__ceil">3 800 ₽</div>
-                    <div class="table__ceil">Тихонова Алина Давидовна</div>
+                    <div class="table__ceil table__ceil_count">5</div>
+                    <div class="table__ceil table__ceil_amount">3 800 ₽</div>
+                    <div class="table__ceil table__ceil_name">Тихонова Алина Давидовна</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -334,21 +329,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">6924662</div>
-                    <div class="table__ceil">21.01.2021, 13:32</div>
-                    <div class="table__ceil table__ceil_color_green">
-                        <svg class="table__icon table__icon_checkmark" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">6924662</div>
+                    <div class="table__ceil table__ceil_date">21.01.2021, 13:32</div>
+                    <div class="table__ceil table__ceil_status table__ceil_color_green">
+                        <svg class="table__icon table__icon_fill_green" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                         </svg>
                         Выполнен
                     </div>
-                    <div class="table__ceil">1</div>
-                    <div class="table__ceil">5 700 ₽</div>
-                    <div class="table__ceil">Александрова Юлия Никитична</div>
+                    <div class="table__ceil table__ceil_count">1</div>
+                    <div class="table__ceil table__ceil_amount">5 700 ₽</div>
+                    <div class="table__ceil table__ceil_name">Александрова Юлия Никитична</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -359,22 +354,22 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">2200086</div>
-                    <div class="table__ceil">19.01.2021, 10:28</div>
-                    <div class="table__ceil table__ceil_with-opacity">
-                        <svg class="table__icon table__icon_abort" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">2200086</div>
+                    <div class="table__ceil table__ceil_date">19.01.2021, 10:28</div>
+                    <div class="table__ceil table__ceil_status table__ceil_with-opacity">
+                        <svg class="table__icon table__icon_stroke_black" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.5 12.5L3.5 3.5" fill="none" />
-                            <circle class="table__icon_abort-circle" cx="8" cy="8" r="6.5" fill="none" />
+                            <circle class="table__icon_stroke_purple" cx="8" cy="8" r="6.5" fill="none" />
                         </svg>
                         Отменен
                     </div>
-                    <div class="table__ceil">–</div>
-                    <div class="table__ceil">–</div>
-                    <div class="table__ceil">Андрей</div>
+                    <div class="table__ceil table__ceil_count">–</div>
+                    <div class="table__ceil table__ceil_amount">–</div>
+                    <div class="table__ceil table__ceil_name">Андрей</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -385,21 +380,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">2842064</div>
-                    <div class="table__ceil">04.01.2021, 12:12</div>
-                    <div class="table__ceil">
-                        <svg class="table__icon table__icon_dot-orange" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">2842064</div>
+                    <div class="table__ceil table__ceil_date">04.01.2021, 12:12</div>
+                    <div class="table__ceil table__ceil_status">
+                        <svg class="table__icon table__icon_fill_orange" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="8" r="4" stroke="none" />
                         </svg>
                         Отложен
                     </div>
-                    <div class="table__ceil">1</div>
-                    <div class="table__ceil">20 500 ₽</div>
-                    <div class="table__ceil">Судакова Анастасия Ильинична</div>
+                    <div class="table__ceil table__ceil_count">1</div>
+                    <div class="table__ceil table__ceil_amount">20 500 ₽</div>
+                    <div class="table__ceil table__ceil_name">Судакова Анастасия Ильинична</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -410,21 +405,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">1730071</div>
-                    <div class="table__ceil">17.12.2020, 22:45</div>
-                    <div class="table__ceil table__ceil_color_green">
-                        <svg class="table__icon table__icon_checkmark" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">1730071</div>
+                    <div class="table__ceil table__ceil_date">17.12.2020, 22:45</div>
+                    <div class="table__ceil table__ceil_status table__ceil_color_green">
+                        <svg class="table__icon table__icon_fill_green" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                         </svg>
                         Выполнен
                     </div>
-                    <div class="table__ceil">1</div>
-                    <div class="table__ceil">1 399 ₽</div>
-                    <div class="table__ceil">Зверева Арина Николаевна</div>
+                    <div class="table__ceil table__ceil_count">1</div>
+                    <div class="table__ceil table__ceil_amount">1 399 ₽</div>
+                    <div class="table__ceil table__ceil_name">Зверева Арина Николаевна</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -435,21 +430,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">7987376</div>
-                    <div class="table__ceil">07.12.2020, 08:57</div>
-                    <div class="table__ceil table__ceil_color_green">
-                        <svg class="table__icon table__icon_checkmark" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">7987376</div>
+                    <div class="table__ceil table__ceil_date">07.12.2020, 08:57</div>
+                    <div class="table__ceil table__ceil_status table__ceil_color_green">
+                        <svg class="table__icon table__icon_fill_green" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                         </svg>
                         Выполнен
                     </div>
-                    <div class="table__ceil">3</div>
-                    <div class="table__ceil">117 810 ₽</div>
-                    <div class="table__ceil">Карташов Максим Кириллович</div>
+                    <div class="table__ceil table__ceil_count">3</div>
+                    <div class="table__ceil table__ceil_amount">117 810 ₽</div>
+                    <div class="table__ceil table__ceil_name">Карташов Максим Кириллович</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -460,21 +455,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">1373265</div>
-                    <div class="table__ceil">15.11.2020, 14:26</div>
-                    <div class="table__ceil table__ceil_color_green">
-                        <svg class="table__icon table__icon_checkmark" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">1373265</div>
+                    <div class="table__ceil table__ceil_date">15.11.2020, 14:26</div>
+                    <div class="table__ceil table__ceil_status table__ceil_color_green">
+                        <svg class="table__icon table__icon_fill_green" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none" />
                         </svg>
                         Выполнен
                     </div>
-                    <div class="table__ceil">1</div>
-                    <div class="table__ceil">17 008 ₽</div>
-                    <div class="table__ceil">Васильев Вадим Даниилович</div>
+                    <div class="table__ceil table__ceil_count">1</div>
+                    <div class="table__ceil table__ceil_amount">17 008 ₽</div>
+                    <div class="table__ceil table__ceil_name">Васильев Вадим Даниилович</div>
                 </div>
                 <div class="table__row">
-                    <div class="table__ceil">
+                    <div class="table__ceil table__ceil_with-checkbox">
                         <div class="custom-checkbox">
                             <label class="custom-checkbox__label">
                                 <input class="custom-checkbox__input" type="checkbox">
@@ -485,64 +480,88 @@
                             </label>
                         </div>
                     </div>
-                    <div class="table__ceil">1311100</div>
-                    <div class="table__ceil">07.11.2020, 18:52</div>
-                    <div class="table__ceil table__ceil_with-opacity">
-                        <svg class="table__icon table__icon_abort" viewBox="0 0 16 16"
+                    <div class="table__ceil table__ceil_number">1311100</div>
+                    <div class="table__ceil table__ceil_date">07.11.2020, 18:52</div>
+                    <div class="table__ceil table__ceil_status table__ceil_with-opacity">
+                        <svg class="table__icon table__icon_stroke_black" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.5 12.5L3.5 3.5" fill="none" />
-                            <circle class="table__icon_abort-circle" cx="8" cy="8" r="6.5" fill="none" />
+                            <circle class="table__icon_stroke_purple" cx="8" cy="8" r="6.5" fill="none" />
                         </svg>
                         Отменен
                     </div>
-                    <div class="table__ceil">–</div>
-                    <div class="table__ceil">–</div>
-                    <div class="table__ceil">София</div>
+                    <div class="table__ceil table__ceil_count">–</div>
+                    <div class="table__ceil table__ceil_amount">–</div>
+                    <div class="table__ceil table__ceil_name">София</div>
                 </div>
             </div>
             <div class="table__footer">
                 <div class="footer__group">
                     <span class="footer__text">Выбрано записей: 5</span>
-                    <button class="footer__button footer__button_long">
-                        <svg class="footer__icon footer__icon_pencil" viewBox="0 0 16 16"
+                    <button
+                        class="custom-button__button custom-button__button_size_small custom-button__button_primary">
+                        <svg class="custom-button__icon custom-button__icon_stroke_white" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 14.5H15" fill="none" />
                             <path
                                 d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4"
                                 fill="none" />
                         </svg>
-                        Изменить статус
+                        <span class="custom-button__text">Изменить статус</span>
                     </button>
-                    <button class="footer__button footer__button_bin_red">
-                        <svg class="footer__icon footer__icon_bin" viewBox="0 0 16 16"
+                    <button class="custom-button__button custom-button__button_size_small custom-button__button_red">
+                        <svg class="custom-button__icon custom-button__icon_stroke_white" viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                                 fill="none" stroke-linecap="round" />
                             <path d="M6.5 6V12M9.5 6V12" fill="none" stroke-linecap="round" />
                         </svg>
-                        Удалить
+                        <span class="custom-button__text">Удалить</span>
                     </button>
                 </div>
                 <div class="custom-dropdown custom-dropdown_delete table__modal">
                     Удалить n записей?
-                    <button class="custom-dropdown__button">Удалить</button>
-                    <button class="custom-dropdown__button custom-dropdown__button_color_blue">Отмена</button>
+                    <button
+                        class="custom-button__button custom-button__button_size_small custom-button__button_transparent">
+                        <span class="custom-button__text">Удалить</span>
+                    </button>
+                    <button
+                        class="custom-button__button custom-button__button_size_small custom-button__button_primary">
+                        <span class="custom-button__text">Отмена</span>
+                    </button>
                 </div>
                 <div class="pagination">
                     <div class="pagination__list">
-                        <button class="pagination__item pagination__item_selected">1</button>
-                        <button class="pagination__item">2</button>
-                        <button class="pagination__item">3</button>
-                        <div class="pagination__text">...</div>
-                        <button class="pagination__item">18</button>
+                        <button
+                            class="custom-button__button custom-button__button_size_small custom-button__button_primary">
+                            <span class="custom-button__text">1</span>
+                        </button>
+                        <button
+                            class="custom-button__button custom-button__button_size_small custom-button__button_transparent">
+                            <span class="custom-button__text">2</span>
+                        </button>
+                        <button
+                            class="custom-button__button custom-button__button_size_small custom-button__button_transparent">
+                            <span class="custom-button__text">3</span>
+                        </button>
+                        <button
+                            class="custom-button__button custom-button__button_size_small custom-button__button_transparent">
+                            <span class="custom-button__text">...</span>
+                        </button>
+                        <button
+                            class="custom-button__button custom-button__button_size_small custom-button__button_transparent">
+                            <span class="custom-button__text">18</span>
+                        </button>
                     </div>
-                    <button class="pagination__icon">#</button>
+                    <button
+                        class="custom-button__button custom-button__button_size_small custom-button__button_transparent pagination__icon">
+                        <span class="custom-button__text">#</span>
+                    </button>
                 </div>
             </div>
         </section>
     </div>
-
 </body>
 
 </html>

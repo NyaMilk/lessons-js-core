@@ -33,6 +33,11 @@
     color: var(--color-white);
 }
 
+.custom-button__button_red {
+    background-color: var(--background-color-red);
+    color: var(--color-white);
+}
+
 .custom-button__button_transparent {
     background-color: transparent;
     color: var(--color-blue);
