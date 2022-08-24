@@ -11,7 +11,8 @@
     box-sizing: border-box;
 }
 
-.custom-input_with-icon {
+.custom-input_incorrect,
+.custom-input_disabled {
     position: relative;
 }
 
@@ -24,14 +25,15 @@
     border: 0.0625rem solid var(--background-color-blue);
 }
 
-.custom-input__input_incorrect {
+.custom-input_incorrect .custom-input__input {
     background-color: var(--background-color-white);
     border: 0.0625rem solid var(--background-color-red);
 }
 
-.custom-input__input_disabled {
+.custom-input_disabled .custom-input__input {
     background-color: var(--background-color-light-blue);
     border: 0.0625rem solid var(--background-color-blue);
+    color: var(--color-black);
 }
 
 .custom-input__button {

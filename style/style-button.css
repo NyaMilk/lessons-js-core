@@ -1,4 +1,4 @@
-.custom-button__button {
+.button {
     display: flex;
     justify-content: center;
     border: none;
@@ -6,81 +6,81 @@
     border-radius: 0.25rem;
 }
 
-.custom-button__button_size_middle {
+.button_size_middle {
     min-width: 2rem;
     min-height: 2rem;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
 }
 
-.custom-button__button_size_small {
+.button_size_small {
     min-width: 1.5rem;
     min-height: 1.5rem;
     gap: 0.25rem;
     padding: 0.25rem 0.5rem;
 }
 
-.custom-button__button_without-text_middle {
+.button_without-text_middle {
     padding: 0.5rem;
 }
 
-.custom-button__button_without-text_small {
+.button_without-text_small {
     padding: 0.25rem;
 }
 
-.custom-button__button_primary {
+.button_primary {
     background-color: var(--background-color-blue);
     color: var(--color-white);
 }
 
-.custom-button__button_red {
+.button_red {
     background-color: var(--background-color-red);
     color: var(--color-white);
 }
 
-.custom-button__button_transparent {
+.button_transparent {
     background-color: transparent;
     color: var(--color-blue);
 }
 
-.custom-button__button_disabled {
+.button_disabled {
     background-color: transparent;
     color: var(--color-black);
 }
 
-.custom-button__icon {
+.button__icon {
     width: 1rem;
     height: 1rem;
 }
 
-.custom-button__icon_stroke_white {
+.button__icon_stroke_white {
     stroke: var(--background-color-white)
 }
 
-.custom-button__icon_fill_white {
+.button__icon_fill_white {
     fill: var(--background-color-white);
 }
 
-.custom-button__icon_stroke_blue {
+.button__icon_stroke_blue {
     stroke: var(--background-color-blue);
 }
 
-.custom-button__icon_fill_blue {
+.button__icon_fill_blue {
     fill: var(--background-color-blue);
 }
 
-.custom-button__icon_stroke_light_blue {
+.button__icon_stroke_light_blue {
     stroke: var(--background-color-light-blue)
 }
 
-.custom-button__icon_fill_light_blue {
+.button__icon_fill_light_blue {
     fill: var(--background-color-light-blue)
 }
 
-.custom-button__icon_stroke_black {
+.button__icon_stroke_black {
     stroke: var(--background-color-black)
 }
 
-.custom-button__icon_fill_black {
+.button__icon_fill_black {
     fill: var(--background-color-black)
 }

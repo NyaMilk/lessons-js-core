@@ -13,7 +13,6 @@
 .custom-dropdown__item {
     height: 2rem;
     line-height: 2rem;
-    margin-left: 1rem;
 }
 
 .custom-dropdown__button_with-icon {
@@ -21,6 +20,11 @@
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
+}
+
+.custom-dropdown__item .custom-checkbox__label :not(.custom-checkbox__text),
+.custom-checkbox__input_without-icon + .custom-checkbox__text {
+    margin-left: 1rem;
 }
 
 .custom-dropdown_go-to-page,
