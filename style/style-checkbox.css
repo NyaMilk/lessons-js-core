@@ -1,48 +1,48 @@
 .custom-checkbox {
-    position: relative;
+  position: relative;
 }
 
 .custom-checkbox__label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .custom-checkbox__input {
-    appearance: none;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 0.125rem;
-    box-sizing: border-box;
-    background-color: var(--background-color-white);
-    border: 0.0625rem solid var(--background-color-light-blue);
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.125rem;
+  box-sizing: border-box;
+  background-color: var(--background-color-white);
+  border: 0.0625rem solid var(--background-color-light-blue);
 }
 
 .custom-checkbox__input_without-icon {
-    display: none;
+  display: none;
 }
 
 .custom-checkbox__input:checked {
-    background-color: var(--background-color-blue);
-    border-color: var(--background-color-blue);
+  background-color: var(--background-color-blue);
+  border-color: var(--background-color-blue);
 }
 
-.custom-checkbox__input:checked+.custom-checkbox__icon {
-    opacity: 1;
+.custom-checkbox__input:checked + .custom-checkbox__icon {
+  opacity: 1;
 }
 
-.custom-checkbox__input:checked~.custom-checkbox__text,
-.custom-checkbox__input_without-icon:checked~.custom-checkbox__text {
-    color: var(--color-blue);
+.custom-checkbox__input:checked ~ .custom-checkbox__text,
+.custom-checkbox__input_without-icon:checked ~ .custom-checkbox__text {
+  color: var(--color-blue);
 }
 
 .custom-checkbox__icon {
-    position: absolute;
-    left: 0;
-    width: 1rem;
-    opacity: 0;
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  opacity: 0;
 }
 
 .custom-checkbox__icon_checkmark {
-    fill: var(--background-color-white);
+  fill: var(--background-color-white);
 }
