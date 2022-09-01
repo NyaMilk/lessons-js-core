@@ -1,0 +1,50 @@
+.custom-input__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.custom-input__input {
+  width: 16rem;
+  height: 2rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  background-color: var(--background-color-white);
+  border: 0.0625rem solid var(--background-color-blue);
+}
+
+.custom-input_incorrect,
+.custom-input_disabled {
+  position: relative;
+}
+
+.custom-input__input::placeholder {
+  color: var(--background-color-light-blue);
+}
+
+.custom-input_incorrect .custom-input__input {
+  background-color: var(--background-color-white);
+  border: 0.0625rem solid var(--background-color-red);
+}
+
+.custom-input_disabled .custom-input__input {
+  background-color: var(--background-color-light-blue);
+  border: 0.0625rem solid var(--background-color-blue);
+  color: var(--color-black);
+}
+
+.custom-input__button {
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+}
+
+.custom-input_incorrect .custom-input__icon {
+  fill: var(--background-color-light-blue);
+  stroke: var(--background-color-light-blue);
+}
+
+.custom-input_disabled .custom-input__icon {
+  fill: var(--background-color-black);
+  stroke: var(--background-color-black);
+}
